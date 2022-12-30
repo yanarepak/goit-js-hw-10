@@ -3,13 +3,13 @@
     <img class="country__img" 
     src={{flags.svg}}
     alt={{name.official}}
-    width="100px" 
-    height="80px"/>
+    width="140px" 
+    height="100px"/>
     <p class="country__name">{{name.official}}</p>
     <ul class="features-list">
-        <li class="features__item">Capital: {{capital}}</li>
-        <li class="features__item">Population: {{population}}</li>
-        <li class="features__item">Languages: {{languages}}</li>
+        <li class="features__item"><b>Capital:</b> {{capital}}</li>
+        <li class="features__item"><b>Population:</b> {{population}}</li>
+        <li class="features__item"><b>Languages:</b> {{#each languages}}{{this}} {{/each}}</li>
     </ul>
 </li>
 {{/each}}
